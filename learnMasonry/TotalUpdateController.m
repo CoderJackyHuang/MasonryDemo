@@ -64,7 +64,7 @@
     if (isExpanded) {
       make.bottom.mas_equalTo(-20);
     } else {
-      make.bottom.mas_equalTo(-350);
+      make.bottom.mas_equalTo(-300);
     }
   }];
   

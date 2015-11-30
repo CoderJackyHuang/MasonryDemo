@@ -10,6 +10,12 @@
 		69140D371C0887BA00646BCA /* BasicAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69140D361C0887BA00646BCA /* BasicAnimatedController.m */; };
 		69140D381C0887BA00646BCA /* BasicAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69140D361C0887BA00646BCA /* BasicAnimatedController.m */; };
 		69140D391C0887BA00646BCA /* BasicAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69140D361C0887BA00646BCA /* BasicAnimatedController.m */; };
+		69306A611C0BEC51004F529E /* HeaderFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69306A601C0BEC51004F529E /* HeaderFooterViewController.m */; };
+		69306A621C0BEC51004F529E /* HeaderFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69306A601C0BEC51004F529E /* HeaderFooterViewController.m */; };
+		69306A631C0BEC51004F529E /* HeaderFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69306A601C0BEC51004F529E /* HeaderFooterViewController.m */; };
+		69306A6B1C0BF64C004F529E /* TestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69306A6A1C0BF64C004F529E /* TestTableView.m */; };
+		69306A6C1C0BF64C004F529E /* TestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69306A6A1C0BF64C004F529E /* TestTableView.m */; };
+		69306A6D1C0BF64C004F529E /* TestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69306A6A1C0BF64C004F529E /* TestTableView.m */; };
 		693318FF1C09E47A0034D3BF /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693318FE1C09E47A0034D3BF /* ScrollViewController.m */; };
 		693319001C09E47A0034D3BF /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693318FE1C09E47A0034D3BF /* ScrollViewController.m */; };
 		693319011C09E47A0034D3BF /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693318FE1C09E47A0034D3BF /* ScrollViewController.m */; };
@@ -106,6 +112,10 @@
 /* Begin PBXFileReference section */
 		69140D351C0887BA00646BCA /* BasicAnimatedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimatedController.h; sourceTree = "<group>"; };
 		69140D361C0887BA00646BCA /* BasicAnimatedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimatedController.m; sourceTree = "<group>"; };
+		69306A5F1C0BEC51004F529E /* HeaderFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderFooterViewController.h; sourceTree = "<group>"; };
+		69306A601C0BEC51004F529E /* HeaderFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderFooterViewController.m; sourceTree = "<group>"; };
+		69306A691C0BF64C004F529E /* TestTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableView.h; sourceTree = "<group>"; };
+		69306A6A1C0BF64C004F529E /* TestTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableView.m; sourceTree = "<group>"; };
 		693318FD1C09E47A0034D3BF /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		693318FE1C09E47A0034D3BF /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		693319021C09ED580034D3BF /* ScrollViewComplexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewComplexController.h; sourceTree = "<group>"; };
@@ -235,6 +245,8 @@
 				69382CED1C083E6A00F545E8 /* HYBBaseController.m */,
 				6933190C1C09F92D0034D3BF /* TestCell.h */,
 				6933190D1C09F92D0034D3BF /* TestCell.m */,
+				69306A691C0BF64C004F529E /* TestTableView.h */,
+				69306A6A1C0BF64C004F529E /* TestTableView.m */,
 			);
 			path = learnMasonry;
 			sourceTree = "<group>";
@@ -321,6 +333,8 @@
 				693319031C09ED580034D3BF /* ScrollViewComplexController.m */,
 				693319071C09F8FB0034D3BF /* TableViewController.h */,
 				693319081C09F8FB0034D3BF /* TableViewController.m */,
+				69306A5F1C0BEC51004F529E /* HeaderFooterViewController.h */,
+				69306A601C0BEC51004F529E /* HeaderFooterViewController.m */,
 			);
 			name = Test;
 			sourceTree = "<group>";
@@ -468,9 +482,11 @@
 				693319091C09F8FB0034D3BF /* TableViewController.m in Sources */,
 				69382C7F1C083A5600F545E8 /* ViewController.m in Sources */,
 				69382C7C1C083A5600F545E8 /* AppDelegate.m in Sources */,
+				69306A611C0BEC51004F529E /* HeaderFooterViewController.m in Sources */,
 				69382CD11C083A6E00F545E8 /* MASLayoutConstraint.m in Sources */,
 				69382CF31C0842C200F545E8 /* UpdateConstraintsController.m in Sources */,
 				693319041C09ED580034D3BF /* ScrollViewComplexController.m in Sources */,
+				69306A6B1C0BF64C004F529E /* TestTableView.m in Sources */,
 				69382C791C083A5600F545E8 /* main.m in Sources */,
 				69382CFD1C0854AC00F545E8 /* TotalUpdateController.m in Sources */,
 				69382CE31C083A6E00F545E8 /* ViewController+MASAdditions.m in Sources */,
@@ -495,7 +511,9 @@
 				69382CCF1C083A6E00F545E8 /* MASConstraintMaker.m in Sources */,
 				69382CDE1C083A6E00F545E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				69382D081C0862C200F545E8 /* AspectFitController.m in Sources */,
+				69306A6C1C0BF64C004F529E /* TestTableView.m in Sources */,
 				69382CD21C083A6E00F545E8 /* MASLayoutConstraint.m in Sources */,
+				69306A621C0BEC51004F529E /* HeaderFooterViewController.m in Sources */,
 				69140D381C0887BA00646BCA /* BasicAnimatedController.m in Sources */,
 				693319051C09ED580034D3BF /* ScrollViewComplexController.m in Sources */,
 				69382C921C083A5600F545E8 /* learnMasonryTests.m in Sources */,
@@ -525,7 +543,9 @@
 				69382CD01C083A6E00F545E8 /* MASConstraintMaker.m in Sources */,
 				69382CDF1C083A6E00F545E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				69382D091C0862C200F545E8 /* AspectFitController.m in Sources */,
+				69306A6D1C0BF64C004F529E /* TestTableView.m in Sources */,
 				69382CD31C083A6E00F545E8 /* MASLayoutConstraint.m in Sources */,
+				69306A631C0BEC51004F529E /* HeaderFooterViewController.m in Sources */,
 				69140D391C0887BA00646BCA /* BasicAnimatedController.m in Sources */,
 				693319061C09ED580034D3BF /* ScrollViewComplexController.m in Sources */,
 				69382C9D1C083A5600F545E8 /* learnMasonryUITests.m in Sources */,

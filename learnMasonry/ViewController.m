@@ -17,6 +17,7 @@
 #import "ScrollViewController.h"
 #import "ScrollViewComplexController.h"
 #import "TableViewController.h"
+#import "HeaderFooterViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -49,6 +50,7 @@
                        [[ScrollViewController alloc] initWithTitle:@"ScrollView布局"],
                        [[ScrollViewComplexController alloc] initWithTitle:@"复杂ScrollView"],
                        [[TableViewController alloc] initWithTitle:@"tableview布局"],
+                       [[HeaderFooterViewController alloc] initWithTitle:@"header/footer layout"],
                        ];
 }
 

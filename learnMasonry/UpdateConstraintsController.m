@@ -41,20 +41,20 @@
 
 #pragma mark - updateViewConstraints
 - (void)updateViewConstraints {
- [self.growingButton mas_updateConstraints:^(MASConstraintMaker *make) {
-   make.center.mas_equalTo(self.view);
-   
-   // 初始宽、高为100，优先级最低
-   make.width.height.mas_equalTo(100 * self.scacle).priorityLow();
-   // 最大放大到整个view
-   make.width.height.lessThanOrEqualTo(self.view);
- }];
+  [self.growingButton mas_updateConstraints:^(MASConstraintMaker *make) {
+    make.center.mas_equalTo(self.view);
+    
+    // 初始宽、高为100，优先级最低
+    make.width.height.mas_equalTo(100 * self.scacle).priorityLow();
+    // 最大放大到整个view
+    make.width.height.lessThanOrEqualTo(self.view);
+  }];
   
   [super updateViewConstraints];
 }
 
 - (void)onGrowButtonTaped:(UIButton *)sender {
-  self.scacle += 0.5;
+  self.scacle += 0.2;
   
   // 告诉self.view约束需要更新
   [self.view setNeedsUpdateConstraints];
