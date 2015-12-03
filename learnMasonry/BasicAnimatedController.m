@@ -82,14 +82,13 @@
   [self.blueView mas_updateConstraints:^(MASConstraintMaker *make) {
     make.bottom.mas_equalTo(-padding);
     make.top.mas_equalTo((screenHeight - 64) / 2 - 5);
+//    make.right.mas_equalTo(self.view.mas_right).offset(-padding);
   }];
-//  [self.greenView mas_updateConstraints:^(MASConstraintMaker *make) {
-//    make.top.mas_equalTo(padding);
-//  }];
   
-  [self.view setNeedsUpdateConstraints];
-  [self.view updateConstraintsIfNeeded];
   if (animated) {
+    [self.view setNeedsUpdateConstraints];
+    [self.view updateConstraintsIfNeeded];
+
     [UIView animateWithDuration:0.5 animations:^{
       [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
@@ -97,6 +96,8 @@
       [self updateAnimated:YES];
     }];
   } else {
+    [self.view layoutIfNeeded];
+    
     [self updateAnimated:YES];
   }
 }

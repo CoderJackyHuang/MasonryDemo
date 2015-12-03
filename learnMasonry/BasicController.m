@@ -34,7 +34,6 @@
   // 使这三个控件等高
   CGFloat padding = 10;
   [greenView mas_makeConstraints:^(MASConstraintMaker *make) {
-    make.top.mas_equalTo(padding);
     make.left.mas_equalTo(padding);
     make.right.mas_equalTo(redView.mas_left).offset(-padding);
     make.bottom.mas_equalTo(blueView.mas_top).offset(-padding);
@@ -51,7 +50,7 @@
   }];
   
   [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
-    make.height.mas_equalTo(greenView);
+//    make.height.mas_equalTo(greenView);
     make.bottom.mas_equalTo(-padding);
     make.left.mas_equalTo(padding);
     make.right.mas_equalTo(-padding);

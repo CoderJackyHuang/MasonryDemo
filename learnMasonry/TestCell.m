@@ -114,7 +114,6 @@
   [UIView animateWithDuration:0.15 animations:^{
     [self.contentView layoutIfNeeded];
   }];
-
 }
 
 + (CGFloat)heightWithModel:(TestModel *)model {

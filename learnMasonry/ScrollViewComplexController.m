@@ -105,6 +105,7 @@
     if (view == tapView) {
       NSNumber *state = [array lastObject];
       
+      // 当前是展开状态的话，就收缩
       if ([state boolValue] == YES) {
         [view mas_updateConstraints:^(MASConstraintMaker *make) {
           make.height.mas_equalTo(40);

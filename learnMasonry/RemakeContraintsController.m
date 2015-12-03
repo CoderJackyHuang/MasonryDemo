@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIButton *growingButton;
 @property (nonatomic, assign) BOOL isExpanded;
+@property (nonatomic, strong) MASConstraint *height;
 
 @end
 
@@ -33,10 +34,11 @@
 - (void)updateViewConstraints {
   // 这里使用update也是一样的。
   // remake会将之前的全部移除，然后重新添加
+  __weak __typeof(self) weakSelf = self;
   [self.growingButton mas_remakeConstraints:^(MASConstraintMaker *make) {
     make.top.mas_equalTo(0);
     make.left.right.mas_equalTo(0);
-    if (self.isExpanded) {
+    if (weakSelf.isExpanded) {
       make.bottom.mas_equalTo(0);
     } else {
       make.bottom.mas_equalTo(-350);
